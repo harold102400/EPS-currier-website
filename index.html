@@ -10,55 +10,98 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/971f32a8cd.js" crossorigin="anonymous"></script>
+    <script defer src="./js/index.js"></script>
     <title>Menu</title>
 </head>
 
-<body>
+<body id="body">
     <header>
         <div class="icon__menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" id="btn_open"></i>
         </div>
     </header>
-        <div class="menu__side">
-            <div class="name__page">
-                <i class="fab fa-youtube"></i>
-                <h4>EPS</h4>
-            </div>
-            <div class="menu__options">
-
-                <a href="#">
-                    <div class="option">
-                        <i class="fas fa-home" title="Home"></i>
-                        <h4>Inicio</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="option">
-                        <i class="fas fa-user" title="Mi cuenta"></i>
-                        <h4>Mi cuenta</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="option">
-                        <i class="fa fa-magnifying-glass" title="Mis paquetes"></i>
-                        <h4>Mis paquetes</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="option">
-                        <i class="fa fa-volume-high" title="Preavisame"></i>
-                        <h4>Preavisame</h4>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="option">
-                        <i class="fas fa-credit-card" title="Voy pa' llá / Delivery"></i>
-                        <h4>Voy pa' llá / Delivery</h4>
-                    </div>
-                </a>
-
-            </div>
+    <div class="menu__side" id="menu_side">
+        <div class="name__page">
+            <i class="fab fa-youtube"></i>
+            <h4>EPS</h4>
         </div>
+        <div class="menu__options">
+
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Home"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-user" title="Mi cuenta"></i>
+                    <h4>Mi cuenta</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="fa fa-magnifying-glass" title="Mis paquetes"></i>
+                    <h4>Mis paquetes</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="fa fa-volume-high" title="Preavisame"></i>
+                    <h4>Preavisame</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <i class="fas fa-credit-card" title="Voy pa' llá / Delivery"></i>
+                    <h4>Voy pa' llá / Delivery</h4>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <main>
+        <article>
+            <section class="container">
+                <div class="exp-container">
+                    <h2 class="exp-container-tittle">HTML</h2>
+                    <p class="exp-container-description">4 years Experience</p>
+                </div>
+
+                <div class="exp-container">
+                    <h2 class="exp-container-tittle">CSS</h2>
+                    <p class="exp-container-description">4 years Experience</p>
+                </div>
+
+                <div class="exp-container">
+                    <h2 class="exp-container-tittle">JAVASCRIPT</h2>
+                    <p class="exp-container-description">4 years Experience</p>
+                </div>
+
+                <div class="exp-container">
+                    <h2 class="exp-container-tittle">REACT</h2>
+                    <p>3 years Experience</p>
+                </div>
+
+                <div class="exp-container">
+                    <h2 class="exp-container-tittle">REACT</h2>
+                    <p class="exp-container-description">3 years Experience</p>
+                </div>
+
+                <div class="exp-container">
+                    <div>
+                        <h1>ICONO</h1>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-regular fa-person-dolly"></i>
+                        <p>PAQUETES DISPONIBLES</p>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+    </main>
 </body>
 
 </html>
