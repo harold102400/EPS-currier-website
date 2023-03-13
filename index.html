@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/imgslide.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/971f32a8cd.js" crossorigin="anonymous"></script>
     <script defer src="./js/index.js"></script>
+    <script defer src="./js/imgSlider.js"></script>
     <title>Menu</title>
 </head>
 
@@ -63,45 +65,148 @@
 
     <main>
         <article>
-            <section class="container">
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">HTML</h2>
-                    <p class="exp-container-description">4 years Experience</p>
-                </div>
 
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">CSS</h2>
-                    <p class="exp-container-description">4 years Experience</p>
-                </div>
 
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">JAVASCRIPT</h2>
-                    <p class="exp-container-description">4 years Experience</p>
-                </div>
+            <section>
+                <div class="slider__container">
 
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">REACT</h2>
-                    <p>3 years Experience</p>
-                </div>
+                    <div class="img__slider">
 
-                <div class="exp-container">
-                    <h2 class="exp-container-tittle">REACT</h2>
-                    <p class="exp-container-description">3 years Experience</p>
-                </div>
-
-                <div class="exp-container">
-                    <div>
-                        <h1>ICONO</h1>
+                        <div class="slide active">
+                            <img class="slide__img" src="./images/banner-babyshower-scaled.jpg" alt="banner">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__img" src="./images/banner-delivery-scaled.jpg" alt="banner">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__img"src="./images/promoWEB-scaled.jpg" alt="banner">
+                        </div>
+                        <div class="navigation">
+                            <div class="btn active"></div>
+                            <div class="btn"></div>
+                            <div class="btn"></div>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-sharp fa-regular fa-person-dolly"></i>
-                        <p>PAQUETES DISPONIBLES</p>
-                    </div>
-                </div>
 
+                </div>
             </section>
+
+           <!--  <section>
+                <div class="slider__container">
+
+                    <div class="slides">
+
+                        <div class="slide first">
+                            <img class="slide__img" src="./images/banner-babyshower-scaled.jpg" alt="banner">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__img" src="./images/banner-delivery-scaled.jpg" alt="banner">
+                        </div>
+                        <div class="slide">
+                            <img class="slide__img"src="./images/promoWEB-scaled.jpg" alt="banner">
+                        </div>
+
+
+                </div>
+            </section> -->
+
+
+            <section class="container">
+
+                <div class="sub__container">
+                    <div class="icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="sub__heading">
+                        <h1 class="counter">0</h1>
+                        <p class="heading__title">PAQUETES DISPONIBLES</p>
+                    </div>
+                </div>
+
+                <div class="sub__container">
+                    <div class="icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="sub__heading">
+                        <h1 class="counter">0</h1>
+                        <p class="heading__title">CORRESPONDENCIA</p>
+                    </div>
+                </div>
+
+                <div class="sub__container">
+                    <div class="icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="sub__heading">
+                        <h1 class="counter">0</h1>
+                        <p class="heading__title">ENVIOS NACIONAL</p>
+                    </div>
+                </div>
+
+                <div class="sub__container">
+                    <div class="icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="sub__heading">
+                        <h1 class="counter">0</h1>
+                        <p class="heading__title">PAQUETES TRANSITO</p>
+                    </div>
+                </div>
+
+                <div class="sub__container">
+                    <div class="icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="sub__heading">
+                        <h1 class="counter">0</h1>
+                        <p class="heading__title">CONDICION ESPECIAL</p>
+                    </div>
+                </div>
+
+                <div class="sub__container">
+                    <div class="icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="sub__heading">
+                        <h1 class="counter">0</h1>
+                        <p class="heading__title">ENVIOS INTERNACIONAL</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card__container">
+                <div class="card__header">
+                    <div class="card__title">
+                        Dirección de paquetes
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div class="card__body">
+                        <p class="heading__title title__name">RAYMY ACOSTA LEBRON</p>
+                        <p class="heading__title">8260 NW 14TH ST</p>
+                        <p class="heading__title">APT 001-092400</p>
+                        <p class="heading__title heading__state">MIAMI, FL 33191-1501</p>
+                    </div>
+                </div>
+
+                <div class="card__header">
+                    <div class="card__title">
+                        Dirección de correspondencia
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div class="card__body">
+                        <p class="heading__title title__name">RAYMY ACOSTA LEBRON</p>
+                        <p class="heading__title">P.O BOX 025650</p>
+                        <p class="heading__title">APT 001-092400</p>
+                        <p class="heading__title heading__state">MIAMI, FL 33102-5650</p>
+                    </div>
+                </div>
+            </section>
+
         </article>
     </main>
+    <footer class="footer">
+
+    </footer>
 </body>
 
 </html>
