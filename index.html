@@ -10,112 +10,134 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logos/logo.png">
     <script src="https://kit.fontawesome.com/971f32a8cd.js" crossorigin="anonymous"></script>
-    <script defer src="./js/index.js"></script>
-    <script defer src="./js/imgSlider.js"></script>
-    <title>Menu</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <title>EPS</title>
 </head>
 
-<body id="body">
+<body>
     <header>
-        <div class="icon__menu">
-            <i class="fas fa-bars" id="btn_open"></i>
+        <div class="header__user__info">
+            <div class="user__info">
+                RAYMY ACOSTA LEBRON
+            </div>
+            <div class="email__info">
+                racosta@dyrsoft.com
+            </div>
         </div>
     </header>
-    <div class="menu__side" id="menu_side">
-        <div class="name__page">
-            <i class="fab fa-youtube"></i>
-            <h4>EPS</h4>
-        </div>
-        <div class="menu__options">
 
-            <a href="#" class="selected">
+    <a id="nav-expand" href="#">
+        <div class="logo__container">
+            <img src="./assets/logos/logo_lightnexxxxx.png" alt="logo" class="eps__logo">
+            <i class="fa-solid fa-bars icon-cross"></i>
+        </div>
+    </a>
+
+    <main>
+        <nav>
+            <div class="nav__collapse__container">
+                <img src="./assets/logos/logo.png" alt="logo" class="eps__logo">
+                <a id="nav-collapse" href="#">
+                    <i class="fa-solid fa-xmark icon-cross"></i>
+                </a>
+
+            </div>
+            <a href="#">
                 <div class="option">
-                    <i class="fas fa-home" title="Home"></i>
+                    <img src="./assets/icons/home.svg" alt="home">
                     <h4>Inicio</h4>
                 </div>
             </a>
             <a href="#">
                 <div class="option">
-                    <i class="fas fa-user" title="Mi cuenta"></i>
+                    <img src="./assets/icons/user.svg" alt="user">
                     <h4>Mi cuenta</h4>
                 </div>
             </a>
             <a href="#">
                 <div class="option">
-                    <i class="fa fa-magnifying-glass" title="Mis paquetes"></i>
+                    <img src="./assets/icons/search.svg" alt="search">
                     <h4>Mis paquetes</h4>
                 </div>
             </a>
             <a href="#">
                 <div class="option">
-                    <i class="fa fa-volume-high" title="Preavisame"></i>
+                    <img src="./assets/icons/speaker.svg" alt="speaker">
                     <h4>Preavisame</h4>
                 </div>
             </a>
             <a href="#">
                 <div class="option">
-                    <i class="fas fa-credit-card" title="Voy pa' llá / Delivery"></i>
+                    <img src="./assets/icons/credit.svg" alt="credit">
                     <h4>Voy pa' llá / Delivery</h4>
                 </div>
             </a>
-
-        </div>
-    </div>
-
-    <main>
+            <a href="#">
+                <div class="option">
+                    <img src="./assets/icons/cash.svg" alt="cash">
+                    <h4>Estado de cuenta</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <img src="./assets/icons/print.svg" alt="print">
+                    <h4>Prueba de exportacion</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <img src="./assets/icons/calculator.svg" alt="calculator">
+                    <h4>Calculadora</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <img src="./assets/icons/home.svg" alt="home">
+                    <h4>Sucursales</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <img src="./assets/icons/video.svg" alt="video">
+                    <h4>FAQ</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <img src="./assets/icons/video.svg" alt="video">
+                    <h4>Tutoriales</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="option">
+                    <img src="./assets/icons/close-circle.svg" alt="close">
+                    <i class="pe-7s-close-circle pe-stack-2x"></i>
+                    <h4>Cerrar sesion</h4>
+                </div>
+            </a>
+        </nav>
         <article>
-
-
             <section>
                 <div class="slider__container">
 
-                    <div class="img__slider">
-
-                        <div class="slide active">
-                            <img class="slide__img" src="./images/banner-babyshower-scaled.jpg" alt="banner">
-                        </div>
-                        <div class="slide">
-                            <img class="slide__img" src="./images/banner-delivery-scaled.jpg" alt="banner">
-                        </div>
-                        <div class="slide">
-                            <img class="slide__img"src="./images/promoWEB-scaled.jpg" alt="banner">
-                        </div>
-                        <div class="navigation">
-                            <div class="btn active"></div>
-                            <div class="btn"></div>
-                            <div class="btn"></div>
-                        </div>
-                    </div>
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+                        space-between="30" centered-slides="true" autoplay-delay="2500"
+                        autoplay-disable-on-interaction="false">
+                        <swiper-slide><img src="./assets/banners/banner-babyshower-scaled.jpg" alt="img1"></swiper-slide>
+                        <swiper-slide><img src="./assets/banners/banner-delivery-scaled.jpg" alt="img2"></swiper-slide>
+                        <swiper-slide><img src="./assets/banners/promoWEB-scaled.jpg" alt="img3"></swiper-slide>
+                    </swiper-container>
 
                 </div>
             </section>
 
-           <!--  <section>
-                <div class="slider__container">
-
-                    <div class="slides">
-
-                        <div class="slide first">
-                            <img class="slide__img" src="./images/banner-babyshower-scaled.jpg" alt="banner">
-                        </div>
-                        <div class="slide">
-                            <img class="slide__img" src="./images/banner-delivery-scaled.jpg" alt="banner">
-                        </div>
-                        <div class="slide">
-                            <img class="slide__img"src="./images/promoWEB-scaled.jpg" alt="banner">
-                        </div>
-
-
-                </div>
-            </section> -->
-
-
             <section class="container">
 
                 <div class="sub__container">
-                    <div class="icon">
-                        <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <img src="./assets/icons/Disponible.png" class="icon__info">
                     </div>
                     <div class="sub__heading">
                         <h1 class="counter">0</h1>
@@ -124,8 +146,8 @@
                 </div>
 
                 <div class="sub__container">
-                    <div class="icon">
-                        <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <img src="./assets/icons/Correspondencia.png" class="icon__info">
                     </div>
                     <div class="sub__heading">
                         <h1 class="counter">0</h1>
@@ -134,8 +156,8 @@
                 </div>
 
                 <div class="sub__container">
-                    <div class="icon">
-                        <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <img src="./assets/icons/EnvioNacional.png" class="icon__info">
                     </div>
                     <div class="sub__heading">
                         <h1 class="counter">0</h1>
@@ -143,9 +165,9 @@
                     </div>
                 </div>
 
-                <div class="sub__container">
-                    <div class="icon">
-                        <i class="fa-solid fa-truck"></i>
+                <div class="sub__container package__ontheway">
+                    <div>
+                        <img src="./assets/icons/Transito.png" class="icon__info">
                     </div>
                     <div class="sub__heading">
                         <h1 class="counter">0</h1>
@@ -153,9 +175,9 @@
                     </div>
                 </div>
 
-                <div class="sub__container">
-                    <div class="icon">
-                        <i class="fa-solid fa-truck"></i>
+                <div class="sub__container special__condition">
+                    <div>
+                        <img src="./assets/icons/Condicion especial.png" class="icon__info">
                     </div>
                     <div class="sub__heading">
                         <h1 class="counter">0</h1>
@@ -164,8 +186,8 @@
                 </div>
 
                 <div class="sub__container">
-                    <div class="icon">
-                        <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <img src="./assets/icons/Enviointernacional.png" class="icon__info">
                     </div>
                     <div class="sub__heading">
                         <h1 class="counter">0</h1>
@@ -181,10 +203,10 @@
                         <i class="fa-solid fa-laptop"></i>
                     </div>
                     <div class="card__body">
-                        <p class="heading__title title__name">RAYMY ACOSTA LEBRON</p>
-                        <p class="heading__title">8260 NW 14TH ST</p>
-                        <p class="heading__title">APT 001-092400</p>
-                        <p class="heading__title heading__state">MIAMI, FL 33191-1501</p>
+                        <p class="footer__heading__title title__name">RAYMY ACOSTA LEBRON</p>
+                        <p class="footer__heading__title">8260 NW 14TH ST</p>
+                        <p class="footer__heading__title">APT 001-092400</p>
+                        <p class="footer__heading__title heading__state">MIAMI, FL 33191-1501</p>
                     </div>
                 </div>
 
@@ -194,10 +216,10 @@
                         <i class="fa-solid fa-laptop"></i>
                     </div>
                     <div class="card__body">
-                        <p class="heading__title title__name">RAYMY ACOSTA LEBRON</p>
-                        <p class="heading__title">P.O BOX 025650</p>
-                        <p class="heading__title">APT 001-092400</p>
-                        <p class="heading__title heading__state">MIAMI, FL 33102-5650</p>
+                        <p class="footer__heading__title title__name">RAYMY ACOSTA LEBRON</p>
+                        <p class="footer__heading__title">P.O BOX 025650</p>
+                        <p class="footer__heading__title">APT 001-092400</p>
+                        <p class="footer__heading__title heading__state">MIAMI, FL 33102-5650</p>
                     </div>
                 </div>
             </section>
@@ -212,7 +234,7 @@
             <div class="footer__right">
                 <a href="#">Términos y condiciones de uso</a>
                 <a href="#">Políticas de privacidad</a>
-                <img src="./images/a (1).png" alt="Merchant Equipment Store Credit Card Logos">
+                <img src="./assets/footerImg/a.png" alt="Merchant Equipment Store Credit Card Logos">
             </div>
         </div>
     </footer>
