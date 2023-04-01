@@ -81,6 +81,9 @@
   .icon-cross {
     font-size: 30px;
   }
+  .icon-bars {
+    font-size: 30px;
+  }
   main {
     padding: 40px 25px;
     transition: .5s ease-in-out;
@@ -264,4 +267,63 @@
     width: 150px;
   }
   
-  
+  @media screen and (max-width: 991px) {
+    .header__user__info {
+       display: none;
+    }
+    .hidden {
+      margin-left: 400px;
+    }
+    .icon-bars {
+      position: absolute;
+      padding: 15px;
+    }
+
+    .footer__right {
+      display: none;
+    }
+
+   /*  .hidden {
+      position: absolute;
+      top: 0;
+      left: 1000%;
+    } */
+    /* .active__logo {
+      background-image: url('../assets/logos/logo.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    } */
+
+  }
+
+  @media screen and (max-width: 830px) {
+    .hidden {
+      margin-left: 325px;
+    }
+  }
+
+  @media screen and (max-width: 732px) {
+    .hidden {
+      margin-left: 298px;
+    }
+    
+  }
+
+  @media screen and (max-width: 550px) {
+    .hidden {
+      margin-left: 200px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .hidden {
+      margin-left: 135px;
+    }
+    .container {
+      padding: 0;
+    }
+    .sub__container {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
